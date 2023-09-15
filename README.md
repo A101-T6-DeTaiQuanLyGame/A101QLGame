@@ -20,7 +20,7 @@
         <tr>
           <td>Phan Trọng Kỳ</td>
           <td>2001207338</td>
-          <td>Nhóm trưởng</td>
+          <td>Thành viên</td>
           <td>NULL</td>
         </tr>
         <tr>
