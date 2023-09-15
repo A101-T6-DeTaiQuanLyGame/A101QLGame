@@ -17,14 +17,21 @@
     </table>  
     Chức năng: 
     WinForm:
-    <li> 
-      Chức năng mua game
-      Chức Năng đăng nhập
-      Chức năng đăng ký
-      Chức năng nạp tiền
-      Hiển thị thư viện game đã mua
-    </li>
+    <ul>
+    <li> Chức năng mua game </li>
+    <li>Chức Năng đăng nhập </li>
+    <li>  Chức năng đăng ký </li>
+    <li>Chức năng nạp tiền </li>
+    <li> Hiển thị thư viện game đã mua</li>
+    </ul>
+      
     Web: 
+    <ul>
+      <li>Đăng nhập, đăng ký</li>
+      <li>Hiển thị danh sách game</li>
+      <li>Nạp tiền</li>
+      <li>Mua game</li>
+    </ul>
     AI: Gợi ý sản phẩm đi kèm.
     
   </body>
