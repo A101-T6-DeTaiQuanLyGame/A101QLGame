@@ -2,7 +2,8 @@
 # Đồ án: QUẢN LÝ BÁN GAME
 <html>
   <body>
-  Thành viên: 
+  <div>
+    Thành viên: 
     <table>
       <tr>
         <th>Tên thành viên</th>
@@ -29,6 +30,9 @@
         
       </tr>
     </table>  
+  </div>  
+  
+    
     
     Chức năng: 
     WinForm:
