@@ -2,10 +2,7 @@
 # Đồ án: QUẢN LÝ BÁN GAME
 <html>
   <body>
-    <u>Thành viên:</u> 
-   
-      
-   
+  Thành viên: 
     <table>
       <tr>
         <th>Tên thành viên</th>
@@ -33,24 +30,27 @@
       </tr>
     </table>  
     
-    <b>Chức năng:</b> 
-    <b>WinForm:</b>
+    Chức năng: 
+    WinForm:
     <ul>
-    <li> Chức năng mua game </li>
-    <li>Chức Năng đăng nhập </li>
-    <li>  Chức năng đăng ký </li>
-    <li>Chức năng nạp tiền </li>
-    <li> Hiển thị thư viện game đã mua</li>
+      <li> Chức năng mua game </li>
+      <li>Chức Năng đăng nhập </li>
+      <li>  Chức năng đăng ký </li>
+      <li>Chức năng nạp tiền </li>
+      <li> Hiển thị thư viện game đã mua</li>
     </ul>
-      <div>
-        <b> Web:</b> 
+      
+  
+    
+     
+    Web: 
         <ul>
           <li>Đăng nhập, đăng ký</li>
           <li>Hiển thị danh sách game</li>
           <li>Nạp tiền</li>
           <li>Mua game</li>
         </ul>
-        <b>AI: Gợi ý sản phẩm đi kèm.</b>
-      </div>
+    AI: Gợi ý sản phẩm đi kèm.
+      
   </body>
 </html>
