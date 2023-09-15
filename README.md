@@ -7,12 +7,28 @@
       <tr>
         <th>Tên thành viên</th>
         <th>Masv</th>
+        <th>Vai trò</th>
         <th>Phân công</th>
+      </tr>
+      <tr>
+        <td>Châu Hoàng Duy</td>
+        <td>2001207060</td>
+        <td>Trưởng nhóm</td>
+        <td></td>
+      </tr>
+      
+      <tr>
+        <td>Phan Trọng Kỳ</td>
+        <td>2001207338</td>
+        <td>Thành viên</td>
+        <td></td>
+        
       </tr>
       <tr>
         <td>Trần Bão Khoa</td>
         <td>2001206935</td>
         <td>Thành viên</td>
+        <td></td>
       </tr>
     </table>  
     <b>Chức năng:<b> 
@@ -34,7 +50,5 @@
     </ul>
     <b>AI:</b> Gợi ý sản phẩm đi kèm.
       </div>
-   
-    
   </body>
 </html>
