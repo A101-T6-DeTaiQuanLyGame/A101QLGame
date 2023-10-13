@@ -15,19 +15,19 @@
           <td>Châu Hoàng Duy</td>
           <td>2001207060</td>
           <td>Nhóm trưởng</td>
-          <td>NULL</td>
+          <td>WinForm</td>
         </tr>
         <tr>
           <td>Phan Trọng Kỳ</td>
           <td>2001207338</td>
           <td>Thành viên</td>
-          <td>NULL</td>
+          <td>Web</td>
         </tr>
         <tr>
           <td>Trần Bão Khoa</td>
           <td>2001206935</td>
           <td>Thành viên</td>
-          <td>NULL</td>
+          <td>Web</td>
         </tr>
       </table>
     </div>
