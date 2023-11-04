@@ -20,24 +20,25 @@ CREATE TABLE KHACHHANG(
 	CCCD char(12),
 	SDT char(10),
 	Email char(30),
-	Diachi nvarchar(50),
-	Quoctich nvarchar(20),
+	DiaChi nvarchar(50),
+	QuocTich nvarchar(20),
 	TenTK char(20),
 	PassTK char(16),
+	SoDu int,
 );
 
 CREATE TABLE THUVIEN(
 	MaTV char(5) NOT NULL,
 	MaKH char(5) NOT NULL,
 	MaGAME char(10) NOT NULL,
-	NgayMua date,
+	NgMua date,
 );
 
 CREATE TABLE GAME(
 	MaGAME char(10) NOT NULL,
-	Tengame nvarchar(50),
-	Chitiet nvarchar(max),
-	Gia int,
+	TenGame nvarchar(50),
+	ChiTiet nvarchar(max),
+	DonGia int,
 	MaNXB char(10),
 );
 
@@ -48,16 +49,16 @@ CREATE TABLE DSLOAIGAME(
 
 CREATE TABLE THELOAI(
 	MaLoai char(5) NOT NULL,
-	Ten nvarchar(30),
+	TenLoai nvarchar(30),
 );
 
 CREATE TABLE DANHGIA(
 	MaDG char(10) NOT NULL,
 	MaKH char(5) NOT NULL,
 	MaGAME char(10) NOT NULL,
-	Tieude nvarchar(50),
-	Noidung nvarchar(max),
-	Rating int,
+	TieuDe nvarchar(50),
+	NoiDung nvarchar(max),
+	DanhGia int,
 	NgayDG date,
 );
 
@@ -105,7 +106,7 @@ GO
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 INSERT INTO KHACHHANG VALUES
-('ADMIN', N'Châu Hoàng Duy', '25/12/2002', '079202016327', '0708575764', 'satthuid334@gmail.com', '', N'Việt Nam', 'admin', 'admin123')
+('ADMIN', N'Châu Hoàng Duy', '25/12/2002', '079202016327', '0708575764', 'satthuid334@gmail.com', '', N'Việt Nam', 'admin', 'admin123', 0)
 
 INSERT INTO NHAXUATBAN VALUES
 ('NXB001', N'Valve'),
@@ -164,7 +165,7 @@ INSERT INTO DSLOAIGAME VALUES
 ('G010', 'TL10')
 
 ---------------------------------------------------------------
-SELECT G.TenGame, G.Gia, N.TenNXB, STRING_AGG(TL.Ten, ', ') AS CombinedTen
+SELECT G.TenGame, G.Gia, N.TenNXB, STRING_AGG(TL.TenLoai, ', ') AS CombinedTen
 FROM GAME G
 JOIN NHAXUATBAN N ON G.MaNXB = N.MaNXB
 JOIN DSLOAIGAME L ON G.MaGAME = L.MaGAME
