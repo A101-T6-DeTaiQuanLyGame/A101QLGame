@@ -36,9 +36,10 @@
       <b>WinForm:</b>
       <ul>
         <li> Chức năng mua game </li>
-        <li>Chức Năng đăng nhập </li>
-        <li>  Chức năng đăng ký </li>
-        <li>Chức năng nạp tiền </li>
+        <li> Chức Năng đăng nhập </li>
+        <li> Chức năng đăng ký </li>
+        <li> Chức năng cập nhật thông tin </li>
+        <li> Chức năng nạp tiền </li>
         <li> Hiển thị thư viện game đã mua</li>
       </ul>
       <b>Web:</b>
