@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLGAME" Class="QLGAMEDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-4SS0M3U\SQLEXPRESS01;Initial Catalog=QLGAME;User ID=sa" SettingsObjectName="DAL.Properties.Settings" SettingsPropertyName="QLGAMEConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.DANHGIA" Member="DANHGIAs">
+    <Type Name="DANHGIA">
+      <Column Name="MaDG" Type="System.String" DbType="Char(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaKH" Type="System.String" DbType="Char(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaGAME" Type="System.String" DbType="Char(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TieuDe" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NoiDung" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DanhGia" Member="DanhGia1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NgDG" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="GAME_DANHGIA" Member="GAME" ThisKey="MaGAME" OtherKey="MaGAME" Type="GAME" IsForeignKey="true" />
+      <Association Name="KHACHHANG_DANHGIA" Member="KHACHHANG" ThisKey="MaKH" OtherKey="MaKH" Type="KHACHHANG" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.THUVIEN" Member="THUVIENs">
+    <Type Name="THUVIEN">
+      <Column Name="MaTV" Type="System.String" DbType="Char(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaKH" Type="System.String" DbType="Char(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaGAME" Type="System.String" DbType="Char(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NgMua" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="GAME_THUVIEN" Member="GAME" ThisKey="MaGAME" OtherKey="MaGAME" Type="GAME" IsForeignKey="true" />
+      <Association Name="KHACHHANG_THUVIEN" Member="KHACHHANG" ThisKey="MaKH" OtherKey="MaKH" Type="KHACHHANG" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DSLOAIGAME" Member="DSLOAIGAMEs">
+    <Type Name="DSLOAIGAME">
+      <Column Name="MaGAME" Type="System.String" DbType="Char(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaLoai" Type="System.String" DbType="Char(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="GAME_DSLOAIGAME" Member="GAME" ThisKey="MaGAME" OtherKey="MaGAME" Type="GAME" IsForeignKey="true" />
+      <Association Name="THELOAI_DSLOAIGAME" Member="THELOAI" ThisKey="MaLoai" OtherKey="MaLoai" Type="THELOAI" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GAME" Member="GAMEs">
+    <Type Name="GAME">
+      <Column Name="MaGAME" Type="System.String" DbType="Char(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenGame" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ChiTiet" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DonGia" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaNXB" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+      <Association Name="GAME_DANHGIA" Member="DANHGIAs" ThisKey="MaGAME" OtherKey="MaGAME" Type="DANHGIA" />
+      <Association Name="GAME_THUVIEN" Member="THUVIENs" ThisKey="MaGAME" OtherKey="MaGAME" Type="THUVIEN" />
+      <Association Name="GAME_DSLOAIGAME" Member="DSLOAIGAMEs" ThisKey="MaGAME" OtherKey="MaGAME" Type="DSLOAIGAME" />
+      <Association Name="NHAXUATBAN_GAME" Member="NHAXUATBAN" ThisKey="MaNXB" OtherKey="MaNXB" Type="NHAXUATBAN" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KHACHHANG" Member="KHACHHANGs">
+    <Type Name="KHACHHANG">
+      <Column Name="MaKH" Type="System.String" DbType="Char(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="HoTen" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="NgSinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="CCCD" Type="System.String" DbType="Char(12)" CanBeNull="true" />
+      <Column Name="SDT" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="Char(30)" CanBeNull="true" />
+      <Column Name="DiaChi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="QuocTich" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="TenTK" Type="System.String" DbType="Char(20)" CanBeNull="true" />
+      <Column Name="PassTK" Type="System.String" DbType="Char(16)" CanBeNull="true" />
+      <Column Name="SoDu" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="KHACHHANG_DANHGIA" Member="DANHGIAs" ThisKey="MaKH" OtherKey="MaKH" Type="DANHGIA" />
+      <Association Name="KHACHHANG_THUVIEN" Member="THUVIENs" ThisKey="MaKH" OtherKey="MaKH" Type="THUVIEN" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NHAXUATBAN" Member="NHAXUATBANs">
+    <Type Name="NHAXUATBAN">
+      <Column Name="MaNXB" Type="System.String" DbType="Char(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenNXB" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="NHAXUATBAN_GAME" Member="GAMEs" ThisKey="MaNXB" OtherKey="MaNXB" Type="GAME" />
+    </Type>
+  </Table>
+  <Table Name="dbo.THELOAI" Member="THELOAIs">
+    <Type Name="THELOAI">
+      <Column Name="MaLoai" Type="System.String" DbType="Char(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenLoai" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Association Name="THELOAI_DSLOAIGAME" Member="DSLOAIGAMEs" ThisKey="MaLoai" OtherKey="MaLoai" Type="DSLOAIGAME" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 9.375" name="QLGAME">
+  <DataContextMoniker Name="/QLGAMEDataContext" />
+  <nestedChildShapes>
+    <classShape Id="7b99d10c-7d06-4d62-a094-459b631726c8" absoluteBounds="6.25, 6.5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/QLGAMEDataContext/DANHGIA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="267e8440-ff09-4afb-9666-6f21b5ed2ec7" absoluteBounds="6.265, 6.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2b2c7be4-eaac-4cb0-a5ed-270d5ebc9499" absoluteBounds="6.25, 0.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/QLGAMEDataContext/THUVIEN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c8089a15-9f5d-45c2-a81e-bf29c45f1d3a" absoluteBounds="6.265, 1.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a09822a0-00ab-4794-8871-404461887556" absoluteBounds="6.25, 4, 2, 1.1939925130208331">
+      <DataClassMoniker Name="/QLGAMEDataContext/DSLOAIGAME" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3544831b-68a0-4f77-8f0d-a2a32cf4ef32" absoluteBounds="6.265, 4.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5413a78c-6704-4f6b-93b6-809e0a0b0cbc" absoluteBounds="3.5, 3.625, 2, 1.7708968098958326">
+      <DataClassMoniker Name="/QLGAMEDataContext/GAME" />
+      <nestedChildShapes>
+        <elementListCompartment Id="96a84954-88a0-46e4-a7e1-21611a008df7" absoluteBounds="3.515, 4.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="374bbee5-691e-4722-88d3-016420fa4398" absoluteBounds="3.5, 6.25, 2, 2.9247054036458326">
+      <DataClassMoniker Name="/QLGAMEDataContext/KHACHHANG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f595b5e1-ffe6-451d-b078-af93d787be59" absoluteBounds="3.515, 6.71, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="873a86d5-0d4d-4aac-9f3a-9cf5b58c9422" absoluteBounds="0.75, 4, 2, 1.1939925130208331">
+      <DataClassMoniker Name="/QLGAMEDataContext/NHAXUATBAN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="77e9a3c4-e4f3-4a27-b2f7-ce59cd186c6a" absoluteBounds="0.765, 4.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="84619b6c-291b-42c9-b056-711b090c0f1f" absoluteBounds="3.5, 1, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/QLGAMEDataContext/THELOAI" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ede95711-39d8-4dd2-aed9-91a9a0dd6d32" absoluteBounds="3.515, 1.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 5.39589680989583); (5.875 : 5.77089680989583); (5.875 : 7.57774983723958); (6.25 : 7.57774983723958)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLGAMEDataContext/GAME/GAME_DANHGIA" />
+      <nodes>
+        <classShapeMoniker Id="5413a78c-6704-4f6b-93b6-809e0a0b0cbc" />
+        <classShapeMoniker Id="7b99d10c-7d06-4d62-a094-459b631726c8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 3.625); (5.875 : 3.25); (5.875 : 1.53929768880208); (6.25 : 1.53929768880208)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLGAMEDataContext/GAME/GAME_THUVIEN" />
+      <nodes>
+        <classShapeMoniker Id="5413a78c-6704-4f6b-93b6-809e0a0b0cbc" />
+        <classShapeMoniker Id="2b2c7be4-eaac-4cb0-a5ed-270d5ebc9499" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 4.59699625651042); (5.97916666666667 : 4.59699625651042 : JumpStart); (6.14583333333333 : 4.59699625651042 : JumpEnd); (6.25 : 4.59699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLGAMEDataContext/GAME/GAME_DSLOAIGAME" />
+      <nodes>
+        <classShapeMoniker Id="5413a78c-6704-4f6b-93b6-809e0a0b0cbc" />
+        <classShapeMoniker Id="a09822a0-00ab-4794-8871-404461887556" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 6.97637491861979); (5.79166666666667 : 6.97637491861979 : JumpStart); (5.95833333333333 : 6.97637491861979 : JumpEnd); (6.25 : 6.97637491861979)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLGAMEDataContext/KHACHHANG/KHACHHANG_DANHGIA" />
+      <nodes>
+        <classShapeMoniker Id="374bbee5-691e-4722-88d3-016420fa4398" />
+        <classShapeMoniker Id="7b99d10c-7d06-4d62-a094-459b631726c8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 6.31153746153846); (5.81607443490112 : 5.99546302663734 : JumpStart); (5.93392556509888 : 5.87761189643958 : JumpEnd); (6.0625 : 5.74903746153846); (6.0625 : 1.96519853320312); (6.25 : 1.96519853320312)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLGAMEDataContext/KHACHHANG/KHACHHANG_THUVIEN" />
+      <nodes>
+        <classShapeMoniker Id="374bbee5-691e-4722-88d3-016420fa4398" />
+        <classShapeMoniker Id="2b2c7be4-eaac-4cb0-a5ed-270d5ebc9499" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.59699625651042); (3.5 : 4.59699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLGAMEDataContext/NHAXUATBAN/NHAXUATBAN_GAME" />
+      <nodes>
+        <classShapeMoniker Id="873a86d5-0d4d-4aac-9f3a-9cf5b58c9422" />
+        <classShapeMoniker Id="5413a78c-6704-4f6b-93b6-809e0a0b0cbc" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 2.1618455607472); (5.81607443490112 : 2.47791999564832 : JumpStart); (5.93392556509888 : 2.59577112584607 : JumpEnd); (6.00357443490112 : 2.66541999564832 : JumpStart); (6.12142556509888 : 2.78327112584607 : JumpEnd); (6.28125 : 2.9430955607472); (6.28125 : 4.03125); (6.25 : 4)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/QLGAMEDataContext/THELOAI/THELOAI_DSLOAIGAME" />
+      <nodes>
+        <classShapeMoniker Id="84619b6c-291b-42c9-b056-711b090c0f1f" />
+        <classShapeMoniker Id="a09822a0-00ab-4794-8871-404461887556" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -15,13 +15,13 @@ GO
 
 CREATE TABLE KHACHHANG(
 	MaKH char(5) NOT NULL,
-	Hoten nvarchar(30),
+	HoTen nvarchar(30),
 	NgSinh date,
 	CCCD char(12),
 	SDT char(10),
 	Email char(30),
 	DiaChi nvarchar(50),
-	QuocTich nvarchar(20),
+	QuocTich nchar(20),
 	TenTK char(20),
 	PassTK char(16),
 	SoDu int,
@@ -59,7 +59,7 @@ CREATE TABLE DANHGIA(
 	TieuDe nvarchar(50),
 	NoiDung nvarchar(max),
 	DanhGia int,
-	NgayDG date,
+	NgDG date,
 );
 
 CREATE TABLE NHAXUATBAN(
@@ -106,7 +106,7 @@ GO
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 INSERT INTO KHACHHANG VALUES
-('ADMIN', N'Châu Hoàng Duy', '25/12/2002', '079202016327', '0708575764', 'satthuid334@gmail.com', '', N'Việt Nam', 'admin', 'admin123', 0)
+('ADMIN', N'Châu Hoàng Duy', '25/12/2002', '079202016327', '0708575764', 'satthuid334@gmail.com', '', 'Vietnam', 'admin', 'admin123', 0)
 
 INSERT INTO NHAXUATBAN VALUES
 ('NXB001', N'Valve'),
@@ -164,10 +164,17 @@ INSERT INTO DSLOAIGAME VALUES
 ('G010', 'TL02'),
 ('G010', 'TL10')
 
+INSERT INTO THUVIEN VALUES
+('TV001', 'ADMIN', 'G001', '11/06/2023'),
+('TV001', 'ADMIN', 'G002', '11/06/2023')
+
 ---------------------------------------------------------------
-SELECT G.TenGame, G.Gia, N.TenNXB, STRING_AGG(TL.TenLoai, ', ') AS CombinedTen
+SELECT G.TenGame, G.DonGia, N.TenNXB, STRING_AGG(TL.TenLoai, ', ') AS CombinedTen
 FROM GAME G
 JOIN NHAXUATBAN N ON G.MaNXB = N.MaNXB
 JOIN DSLOAIGAME L ON G.MaGAME = L.MaGAME
 JOIN THELOAI TL ON L.MaLoai = TL.MaLoai
-GROUP BY G.TenGame, G.Gia, N.TenNXB;
+GROUP BY G.TenGame, G.DonGia, N.TenNXB;
+
+SELECT G.* FROM GAME G, THUVIEN TV
+WHERE G.MaGAME = THUVIEN.MaGAME and TV.MaKH = 'ADMIN'
