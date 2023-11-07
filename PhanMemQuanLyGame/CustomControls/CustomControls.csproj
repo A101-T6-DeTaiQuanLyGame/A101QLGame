@@ -52,6 +52,7 @@
     <Compile Include="Controls\EmailTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Controls\ItemClickEventArgs.cs" />
     <Compile Include="Controls\MainMenuButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -60,6 +61,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DetailPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\DetailPanel.Designer.cs">
+      <DependentUpon>DetailPanel.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\GameItem.cs">
       <SubType>UserControl</SubType>
@@ -102,6 +109,9 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\DetailPanel.resx">
+      <DependentUpon>DetailPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\GameItem.resx">
       <DependentUpon>GameItem.cs</DependentUpon>
@@ -155,6 +165,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ic_search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Banner.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

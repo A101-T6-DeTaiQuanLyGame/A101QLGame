@@ -17,6 +17,12 @@ namespace CustomControls.UserControls
             InitializeComponent();
         }
 
+        public string ID
+        {
+            get;
+            set;
+        }
+
         public string GameName
         {
             get { return lblGame.Text; }

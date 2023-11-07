@@ -1,4 +1,5 @@
-﻿using CustomControls.UserControls;
+﻿using CustomControls.Controls;
+using CustomControls.UserControls;
 using DAL;
 using System;
 using System.Collections.Generic;
@@ -30,6 +31,7 @@ namespace GUI
 
             StorePanel storePanel = new StorePanel();
             storePanel.Dock = DockStyle.Fill;
+            storePanel.ItemClick += GameViewDetail;
 
             PanelMain.Controls.Add(storePanel);
         }
@@ -51,8 +53,19 @@ namespace GUI
 
             StorePanel storePanel = new StorePanel();
             storePanel.Dock = DockStyle.Fill;
+            storePanel.ItemClick += GameViewDetail;
 
             PanelMain.Controls.Add(storePanel);
+        }
+
+        private void GameViewDetail(object sender, ItemClickEventArgs e)
+        {
+            PanelMain.Controls.Clear();
+
+            DetailPanel detailPanel = new DetailPanel(e.ItemID);
+            detailPanel.Dock = DockStyle.Fill;
+
+            PanelMain.Controls.Add(detailPanel);
         }
 
         private void BtnLibrary_Click(object sender, EventArgs e)

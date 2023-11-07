@@ -1,4 +1,5 @@
 ﻿using BLL;
+using CustomControls.Controls;
 using DAL;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,8 @@ namespace CustomControls.UserControls
     public partial class StorePanel : UserControl
     {
         GameBLL gameBLL = new GameBLL();
+        public event EventHandler<ItemClickEventArgs> ItemClick;
+
         public StorePanel()
         {
             InitializeComponent();
@@ -25,20 +28,35 @@ namespace CustomControls.UserControls
             btnSearch.BackgroundImage = Properties.Resources.ic_search;
             btnSearch.BackgroundImageLayout = ImageLayout.Center;
 
-            List<GAME> glist = gameBLL.layDSGame();
+            loadDS(gameBLL.layDSGame());
+        }
 
-            foreach(GAME g in glist)
+        private void loadDS(List<GAME> glist)
+        {
+            foreach (GAME g in glist)
             {
                 string ten = g.TenGame.Trim();
                 int price = (int)g.DonGia;
                 GameItem item = new GameItem
                 {
+                    ID = g.MaGAME,
                     GameName = ten,
-                    
-                    GamePrice = price.ToString("C"),
+                    GamePrice = price.ToString("C0").Replace("$", "") + " VND",
                 };
 
+                item.Click += Game_ViewDetail;
+
                 flowLayoutPanel1.Controls.Add(item);
+            }
+        }
+
+        private void Game_ViewDetail(object sender, EventArgs e)
+        {
+            GameItem clickedItem = sender as GameItem;
+            if (clickedItem != null)
+            {
+                string id = clickedItem.ID;
+                ItemClick?.Invoke(this, new ItemClickEventArgs(id));
             }
         }
     }

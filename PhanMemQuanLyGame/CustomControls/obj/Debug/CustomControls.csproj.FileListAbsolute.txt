@@ -18,3 +18,4 @@ D:\School\PTPM\PhanMemQuanLyGame\CustomControls\obj\Debug\CustomControls.UserCon
 D:\School\PTPM\PhanMemQuanLyGame\CustomControls\obj\Debug\CustomControls.UserControls.StorePanel.resources
 D:\School\PTPM\PhanMemQuanLyGame\CustomControls\obj\Debug\CustomControls.UserControls.GameItem.resources
 D:\School\PTPM\PhanMemQuanLyGame\CustomControls\obj\Debug\CustomControls.UserControls.LibraryPanel.resources
+D:\School\PTPM\PhanMemQuanLyGame\CustomControls\obj\Debug\CustomControls.UserControls.DetailPanel.resources

@@ -20,5 +20,10 @@ namespace BLL
         {
             return DAL.getList();
         }
+
+        public DetailGame layThongTinGame(string id)
+        {
+            return DAL.getDetail(id);
+        }
     }
 }
