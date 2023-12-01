@@ -41,7 +41,6 @@
         <li> Chức năng cập nhật thông tin </li>
         <li> Hiển thị thư viện game đã mua </li>
       </ul>
-      
       <b>Web:</b>
       <ul>
         <li> Chức năng mua game </li>
@@ -50,10 +49,7 @@
         <li> Chức năng cập nhật thông tin </li>
         <li> Hiển thị thư viện game đã mua </li>
       </ul>
-      
       <h3>AI: Gợi ý sản phẩm đi kèm (WEB)</h3>
     </div>
-    
-
   </body>
 </HTML>
