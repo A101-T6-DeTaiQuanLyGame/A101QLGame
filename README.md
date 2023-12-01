@@ -27,7 +27,7 @@
           <td>Trần Bão Khoa</td>
           <td>2001206935</td>
           <td>Thành viên</td>
-          <td>Web</td>
+          <td>Word + PPT + SQL Database + A.I</td>
         </tr>
       </table>
     </div>
