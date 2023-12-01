@@ -39,7 +39,7 @@
         <li> Chức Năng đăng nhập </li>
         <li> Chức năng đăng ký </li>
         <li> Chức năng cập nhật thông tin </li>
-        <li> Hiển thị thư viện game đã mua</li>
+        <li> Hiển thị thư viện game đã mua </li>
       </ul>
       
       <b>Web:</b>
@@ -48,8 +48,9 @@
         <li> Chức Năng đăng nhập </li>
         <li> Chức năng đăng ký </li>
         <li> Chức năng cập nhật thông tin </li>
-        <li> Hiển thị thư viện game đã mua</li>
+        <li> Hiển thị thư viện game đã mua </li>
       </ul>
+      
       <h3>AI: Gợi ý sản phẩm đi kèm (WEB)</h3>
     </div>
     
