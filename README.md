@@ -27,7 +27,7 @@
           <td>Trần Bão Khoa</td>
           <td>2001206935</td>
           <td>Thành viên</td>
-          <td>Web</td>
+          <td>Word + PPT + SQL Database + A.I</td>
         </tr>
       </table>
     </div>
@@ -39,19 +39,17 @@
         <li> Chức Năng đăng nhập </li>
         <li> Chức năng đăng ký </li>
         <li> Chức năng cập nhật thông tin </li>
-        <li> Chức năng nạp tiền </li>
-        <li> Hiển thị thư viện game đã mua</li>
+        <li> Hiển thị thư viện game đã mua </li>
       </ul>
       <b>Web:</b>
       <ul>
-        <li>Đăng nhập, đăng ký</li>
-        <li>Hiển thị danh sách game</li>
-        <li>Nạp tiền</li>
-        <li>Mua game</li>
+        <li> Chức năng mua game </li>
+        <li> Chức Năng đăng nhập </li>
+        <li> Chức năng đăng ký </li>
+        <li> Chức năng cập nhật thông tin </li>
+        <li> Hiển thị thư viện game đã mua </li>
       </ul>
       <h3>AI: Gợi ý sản phẩm đi kèm (WEB)</h3>
     </div>
-    
-
   </body>
 </HTML>
