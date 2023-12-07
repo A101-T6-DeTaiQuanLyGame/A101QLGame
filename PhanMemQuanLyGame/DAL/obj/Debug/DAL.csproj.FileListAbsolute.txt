@@ -1,7 +1,0 @@
-D:\School\PTPM\PhanMemQuanLyGame\DAL\bin\Debug\DAL.dll.config
-D:\School\PTPM\PhanMemQuanLyGame\DAL\bin\Debug\DAL.dll
-D:\School\PTPM\PhanMemQuanLyGame\DAL\bin\Debug\DAL.pdb
-D:\School\PTPM\PhanMemQuanLyGame\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
-D:\School\PTPM\PhanMemQuanLyGame\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
-D:\School\PTPM\PhanMemQuanLyGame\DAL\obj\Debug\DAL.dll
-D:\School\PTPM\PhanMemQuanLyGame\DAL\obj\Debug\DAL.pdb
