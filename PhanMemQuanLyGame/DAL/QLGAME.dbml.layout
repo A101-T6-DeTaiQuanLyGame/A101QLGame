@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="QLGAME">
+  <DataContextMoniker Name="/QLGAMEDataContext" />
+  <nestedChildShapes>
+    <classShape Id="57ab62e8-fb4f-4637-84c5-bdf83082332d" absoluteBounds="3.5, 0.875, 2, 1.9631982421874998">
+      <DataClassMoniker Name="/QLGAMEDataContext/Game" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a97ea85f-6d1c-44f9-ae46-c1b46e98c251" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="886fc440-ce7a-48f8-9878-4ae3a1e7a824" absoluteBounds="6.25, 1.125, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/QLGAMEDataContext/ThuVien" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5dc78718-f55e-4250-a1d1-6d6014a448cc" absoluteBounds="6.265, 1.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="02ba1c84-c349-43ae-8c5d-c03a38bbaf50" absoluteBounds="0.75, 1.25, 2, 1.1939925130208338">
+      <DataClassMoniker Name="/QLGAMEDataContext/NhaXuatBan" />
+      <nestedChildShapes>
+        <elementListCompartment Id="39d487ac-dfed-4d8e-acaf-6cefa6c53c63" absoluteBounds="0.765, 1.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bdadaf6e-6c51-4372-8faa-f44b2d3684bb" absoluteBounds="3.5, 5.25, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/QLGAMEDataContext/TaiKhoan" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ebee7235-fc2e-4129-ada1-5bb28de970fb" absoluteBounds="3.515, 5.71, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e2756275-08c4-403a-b436-e7a1eb22dfb3" absoluteBounds="0.75, 4.25, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/QLGAMEDataContext/TheLoai" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9934e8d9-3c98-4e5f-83fc-a2d12b515d02" absoluteBounds="0.765, 4.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 1.91429768880208); (6.25 : 1.91429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLGAMEDataContext/Game/Game_ThuVien" />
+      <nodes>
+        <classShapeMoniker Id="57ab62e8-fb4f-4637-84c5-bdf83082332d" />
+        <classShapeMoniker Id="886fc440-ce7a-48f8-9878-4ae3a1e7a824" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 1.84699625651042); (3.5 : 1.84699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLGAMEDataContext/NhaXuatBan/NhaXuatBan_Game" />
+      <nodes>
+        <classShapeMoniker Id="02ba1c84-c349-43ae-8c5d-c03a38bbaf50" />
+        <classShapeMoniker Id="57ab62e8-fb4f-4637-84c5-bdf83082332d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 6.52005126953125); (7.25 : 6.52005126953125); (7.25 : 2.70359537760417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLGAMEDataContext/TaiKhoan/TaiKhoan_ThuVien" />
+      <nodes>
+        <classShapeMoniker Id="bdadaf6e-6c51-4372-8faa-f44b2d3684bb" />
+        <classShapeMoniker Id="886fc440-ce7a-48f8-9878-4ae3a1e7a824" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.25091745577925); (3.125 : 3.87591745577925); (3.125 : 2.37384924934896); (3.5 : 2.37384924934896)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLGAMEDataContext/TheLoai/TheLoai_Game" />
+      <nodes>
+        <classShapeMoniker Id="e2756275-08c4-403a-b436-e7a1eb22dfb3" />
+        <classShapeMoniker Id="57ab62e8-fb4f-4637-84c5-bdf83082332d" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
